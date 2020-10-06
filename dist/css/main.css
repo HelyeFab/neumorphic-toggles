@@ -1,30 +1,33 @@
-/**
- * Set up a decent box model on the root element
- */
-html {
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
+html {
+  font-size: 62.5%; }
 
-/**
- * Basic styles for links
- */
-a {
-  color: #e50050;
-  text-decoration: none; }
-  a:hover, a:active, a:focus {
-    color: #222222;
-    text-decoration: underline; }
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  background-color: #d1dad3; }
 
 /**
  * Basic typography style for copy text
  */
+.switch__container {
+  max-width: 100rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .switch__container-holder {
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem; }

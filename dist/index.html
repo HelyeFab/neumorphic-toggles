@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/c01f624491.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/css/main.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="switch__container">
+        <div class="switch__container-holder">
+            <div class="switch__container-label">
+                 <i class="fa fa-bluetooth" aria-hidden="true"></i>
+                 <span>Bluetooth</span>
+            </div>
+            <div class="switch__container-toggle">
+                <input type="checkbox" id="bluetooth">
+                <label for="bluetooth"></label>
+            </div>
+        </div>
+        <div class="switch__container-holder">
+            <div class="switch__container-label">
+                <i class="fa fa-wifi" aria-hidden="true"></i>
+                <span>WiFi</span>
+            </div>
+            <div class="switch__container-toggle">
+                <input type="checkbox" id="wifi">
+                <label for="wifi"></label>
+            </div>
+        </div>
+        <div class="switch__container-holder">
+            <div class="switch__container-label">
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                <span>Location</span>
+            </div>
+            <div class="switch__container-toggle">
+                <input type="checkbox" id="location">
+                <label for="location"></label>
+            </div>
+        </div>
+    </div>
+
     <script src="/app.js"></script>
 </body>
 </html>
